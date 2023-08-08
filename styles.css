@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #464646; /* Same as previous background color */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px; /* Adjust as needed */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+#main-menu img {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+}
+
+#other-buttons {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+}
+
+#other-buttons a {
+    color: #f2d673; /* Honey color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Removes the underline */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#other-buttons a:hover {
+    color: #f0e130; /* Slightly different color on hover */
+}
+button {
+    background-color: #f2d673;
+    border: none;
+    color: #464646;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0e130;
+}
+
+.section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#section1, #section3, #section5 {
+    background-color: #f2d673;
+    color: #464646;
+}
+
+#section2, #section4 {
+    background-color: #464646;
+    color: #f2d673;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+canvas {
+  position: fixed;
+  z-index: 0;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+    visibility: hidden;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+.image-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.image-buttons img {
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    object-fit: cover; /* Ensures that the aspect ratio is maintained */
+}
+.image-buttons a {
+    display: inline-block; /* Allows the transformation to be applied */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+}
+
+.image-buttons a:hover {
+    transform: scale(0.9); /* Shrinks the button to 90% of its original size */
+    filter: brightness(0.8); /* Darkens the color by 20% */
+}
+
+

@@ -6,18 +6,52 @@ body, html {
 }
 
 nav {
-    background-color: #464646; /* Same as previous background color */
     display: flex;
-    justify-content: space-between;
-    padding: 15px 30px; /* Adjust as needed */
+    background-color: #464646;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
+
+.nav-left,
+.nav-right {
+    flex: 1; /* 1/5 of the page */
+}
+
+.nav-center {
+    flex: 3; /* 3/5 of the page */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #main-menu img {
     width: 50px; /* Adjust the size as needed */
     height: 50px; /* Adjust the size as needed */
 }
+
+#other-buttons {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+}
+
+#other-buttons button {
+    background: none; /* Remove the background color */
+    color: #f2d673; /* Honey color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Removes the underline */
+    cursor: pointer;
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+}
+
+#other-buttons button:hover {
+    color: #f0e130; /* Slightly different color on hover */
+}
+
+/* Rest of the CSS remains the same */
+
 
 #other-buttons {
     display: flex;
@@ -124,5 +158,4 @@ canvas {
     transform: scale(0.9); /* Shrinks the button to 90% of its original size */
     filter: brightness(0.8); /* Darkens the color by 20% */
 }
-
 
